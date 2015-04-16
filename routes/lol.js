@@ -1,0 +1,1 @@
+var pattern=/.pdf/i
