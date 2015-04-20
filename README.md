@@ -1,5 +1,8 @@
 A web spider to download all PDF files in a given link, and the link inside it, and one more.. (You may specify that according to your mood, and ofcourse, requirement).
 
+Requisites:
+	Node.js
+
 Installation:
 
 	Clone the repo: 
@@ -35,4 +38,4 @@ Output:
 	2. All urls visited listed in urls.txt
 
 	3. All pdfs downloaded listed in pdfs.txt
-	
+
