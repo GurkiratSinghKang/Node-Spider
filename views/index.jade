@@ -8,5 +8,12 @@ block content
 
 	div.loginbox
 		form(name="fetchURL", action="/scrape", method="post")
-			input(type="text", name="url")
+			input(type="text", name="url", value="http://trai.gov.in/Content/PressReleases.aspx")
+			br
+			h5 Enter keyword in URL (if any):
+			input(type="text", name="keyword", value="Press")
+			br
+			h5 Maximum Depth:
+			input(type="text", name="depth", value="3")
+			br
 			input(type="submit", value="Fetch")

@@ -18,6 +18,8 @@
     "cheerio"    : "latest",
     "serve-favicon": "~2.2.0",
     "async" : "latest",
-    "mysql" : "latest"
+    "underscore" : "latest",
+    "url" : "latest"
+
   }
 }

@@ -1,7 +1,7 @@
 var express = require('express');
 var request = require('request')
   , cheerio = require('cheerio')
-  , async = require('async')
+  , async = require('async'),
   , seen = {};
 var router = express.Router();
 
@@ -12,8 +12,9 @@ var queue = async.queue(function crawl(url, next) {
     if (err) return next(err);
 
     seen[url] = true;
-    console.log($('a').map(function(i, e){$(e).attr('href'); }));
+    
     var $ = cheerio.load(body);
+    console.log($('a').map(function(i, e){$(e).attr('href'); }));
     queue.push($('a').map(function(i, e){ return $(e).attr('href'); }));
 
     next(null);
@@ -23,7 +24,6 @@ var queue = async.queue(function crawl(url, next) {
 router.post('/', function(req, res, next){
     var url = req.body.url;
     queue.push(url);
-    // Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
 	res.send('Check console!')
 })
 
