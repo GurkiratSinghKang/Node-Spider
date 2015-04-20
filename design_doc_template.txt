@@ -1,0 +1,28 @@
+1. Title:
+	Generic web spider, written in Node.js 
+
+2. Project Description:
+	The core functionality is to download latest press releases from TRAI. The application can download all PDF files from any website,
+	with additional functionality, of specifying the depth, and a keyword, to make it faster to download what you are looking for. The spider 		also takes care that it does not spill all over the internet.
+	
+
+3. Use Cases and Edge Conditions:
+	All the information a student of CSE department in MIT needs is there on resource.mitfiles.com. Downloading all the pdfs doesn't make too 		much sense. Suppose a person wants to download only the pdfs of Computer Graphics(CG) subject, located under CG folder, he can just specify 		CG as the keyword, and only specific files will be downloaded.
+		
+
+4. Workflow:
+	The application takes a url as an input, and aims to download all the pdfs inside it, no matter how many levels deep. We can even specify how 		many levels deep we want the spider to go. The output will be obtained in Downloads folder, and the files, urls.txt and pdfs.txt. Crawler is 		the main class that does all the work and is placed in crawler.js file. It uses a simple algorithm to recursively call the crawlUrl function 		with some constraints. Dependencies and thier versions are mentioned in package.json file.
+
+
+5. Data formats and Reporting:
+
+	Output data is in the Downloads folder, containing all the pdf files required. Also, urls.txt contains all urls visited and pdfs.txt contains 		list of all pdfs downloaded.
+
+6. Performance and Scaling:
+
+	Speed is an issue. The application can be improved my visiting urls in parallel. Also, downloading can be done in parallel.
+
+7. Unresolved issues
+
+	Not extensively tested.
+
