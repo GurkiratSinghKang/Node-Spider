@@ -1,4 +1,4 @@
-A web spider to download all PDF files in a given link, and the link inside it, and one more.. (You may specify that according to your mood, and ofcourse, requirement).
+A web spider to download all PDF files in a given link, and the link inside it, and the one inside it..and more.. (You may specify that according to your mood, and ofcourse, requirement).
 
 Requisites:
 	
