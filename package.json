@@ -16,7 +16,7 @@
     "express"    : "latest",
     "request"    : "latest",
     "cheerio"    : "latest",
-    "serve-favicon": "~2.2.0",
+    "serve-favicon": "~2.5.0",
     "async" : "latest",
     "underscore" : "latest",
     "url" : "latest"
